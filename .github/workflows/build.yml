@@ -12,7 +12,7 @@ jobs:
       - name: Build
         run: cargo build --release
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: my-app.exe
           path: target/release/my_app.exe # 替换为你的 exe 名称
